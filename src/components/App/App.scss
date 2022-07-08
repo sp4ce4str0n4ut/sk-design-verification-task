@@ -1,0 +1,49 @@
+@import '../../assets/styles/colors';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  background: $background-color;
+
+  &_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    gap: 60px;
+    
+    max-width: 1440px;
+    height: 466px;
+  }
+}
+
+@media screen and (max-width: 1339px) {
+  .app {
+    &_wrap {
+      flex-direction: column;
+      justify-content: center;
+
+      max-width: 980px;
+    }
+  }  
+}
+
+@media screen and (max-width: 1023px) {
+  .app {
+    &_wrap {
+      flex-direction: column;
+      justify-content: center;
+
+      max-width: 800px;
+    }
+  }  
+}
