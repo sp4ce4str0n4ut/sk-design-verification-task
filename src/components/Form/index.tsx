@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { fetchCitiesData } from '../../store/cities';
 import { fetchSourcesData } from '../../store/sources';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state: any) => ({
   cities: state.cities.cities,
   sources: state.sources.sources,
 });
