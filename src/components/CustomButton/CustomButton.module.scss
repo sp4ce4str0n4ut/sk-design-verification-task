@@ -1,0 +1,73 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/fonts';
+
+.custom_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 25px;
+
+    width: 100%;
+    height: 55px;
+
+    background: $primary-color;
+    color: $background-color;
+    border: inherit;
+    border-radius: 8px;
+
+    flex: none;
+    order: 7;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: $font-open-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: $hover-color;
+    }
+
+    &:active {
+        background: $active-color;
+    }
+}
+
+.loader {
+    position: relative;
+
+    &_loading {
+        position: absolute;
+        border: 2px solid $background-color;
+        border-top: 2px solid transparent; 
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+.disabled {
+    background: $disabled-color;
+    color: $font-disabled-color;
+    pointer-events: none;
+}
+
+.loading {
+    pointer-events: none;    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,12 +1,13 @@
 import React from 'react';
-import Form from '../Form/Form';
+import Form from '../Form/index';
 import Info from '../Info/Info';
-import './App.scss';
+
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="app">
-      <div className='app_wrap'>
+    <div className={styles.app}>
+      <div className={styles.app_wrap}>
         <Info />
         <Form />
       </div>

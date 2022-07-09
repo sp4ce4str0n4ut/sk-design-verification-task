@@ -1,0 +1,83 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/fonts';
+
+.input {
+  &_outline {
+    padding: 5px 15px;
+    width: 85%;
+    height: 40px;
+    left: 0px;
+    top: 5px;
+    background: $background-color;
+    border: 2px solid $disabled-color;
+    border-radius: 8px;
+    transition: border-color .25s ease;
+
+    &_x {
+      width: 100%;
+      position: relative;
+    }
+  
+    &_error {
+      border: 2px solid $error-color !important;
+    }
+
+    &::placeholder {
+      color: $disabled-color;
+    }
+
+    &:focus {
+      border-color: $primary-color;
+    }
+
+    & ~ .input_label {
+      background-color: $background-color;
+    }
+  }
+
+  &_control {
+    margin: 0;
+    font-family: $font-open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    outline: none;
+
+    &:focus ~ .input_label {
+      color: $primary-color;
+      transition:color .25s ease;
+    }
+  }
+
+  &_label {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1.5;
+    left: 12px;
+    top: 12px;
+    color: $font-disabled-color; 
+    padding: 0 2px;
+    transform: scale(0.75) translate(-2px, -32px);
+
+    &_error {
+      color: $error-color !important;
+    }
+  }
+
+  &_error {
+    position: absolute;
+    width: fit-content;
+    font-family: $font-open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: $error-color;
+    transform: scale(0.75) translate(-2px, 60px);  
+  }
+} 
+
+.stretch {
+  width: 92%;
+}
