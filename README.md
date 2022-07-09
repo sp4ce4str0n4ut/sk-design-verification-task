@@ -1,10 +1,49 @@
-# Getting Started with Create React App
+# SK Design Verification Task
+### Requirements
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* `@reduxjs/toolkit`
+* `@testing-library/jest-dom`
+* `@testing-library/react`
+* `@testing-library/user-event`
+* `@types/classnames`
+* `@types/jest`
+* `@types/node`
+* `@types/react`
+* `@types/react-dom`
+* `@types/react-input-mask`
+* `@types/react-redux`
+* `axios`
+* `classnames`
+* `formik`
+* `react`
+* `react-dom`
+* `react-input-mask`
+* `react-redux`
+* `react-scripts`
+* `sass`
+* `styled-components`
+* `typescript`
+* `web-vitals`
+* `yup`
+
+### Features
+
+- **Adaptive design**
+- **Data request** simulation using `axios` and `json-server`
+- **Validation** using `formik` and `yup`
+- **State management** using `redux` and `@reduxjs/toolkit`
+- **Styling of components** is done using **scss modules**
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `json-server --watch db.json --port 3001`
+
+Runs server simulations, allowing simulation of **GET** requests.\
+You can open [http://localhost:3001](http://localhost:3001) to checkout simulated database.
+
+Additionally, you can change port number if any problems occur or if it is does not fit you.
 
 ### `npm start`
 
