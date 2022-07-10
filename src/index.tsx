@@ -2,10 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import App from './components/App/App';
+import GlobalStyles from './assets/styles/global';
 
-import reportWebVitals from './reportWebVitals';
-import store from './store/configureStore';
-import './assets/styles/index.scss';
+import store from './store/configureStore'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,9 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <GlobalStyles />
       <App />
     </Provider>
   </React.StrictMode>
 );
-
-reportWebVitals();

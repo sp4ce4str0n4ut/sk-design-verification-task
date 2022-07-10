@@ -12,6 +12,7 @@
 * `@types/react-dom`
 * `@types/react-input-mask`
 * `@types/react-redux`
+* `@types/styled-components`
 * `axios`
 * `classnames`
 * `formik`
@@ -32,7 +33,7 @@
 - **Data request** simulation using `axios` and `json-server`
 - **Validation** using `formik` and `yup`
 - **State management** using `redux` and `@reduxjs/toolkit`
-- **Styling of components** is done using **scss modules**
+- **Styling of components** is done using **css modules** and **styled-components**
 
 ## Available Scripts
 

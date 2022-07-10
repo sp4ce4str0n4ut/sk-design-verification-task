@@ -44,7 +44,7 @@ export const CustomSelect = ({
         {...field}
         {...props}
       >
-        <option defaultValue='' disabled={true}></option>
+        <option defaultValue='' disabled hidden></option>
         {data?.map((item, index) => (
           <option value={item.id} key={index}>
             {item.name}

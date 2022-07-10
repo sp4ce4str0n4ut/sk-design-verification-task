@@ -126,7 +126,7 @@
 }
 
 .select_control:focus ~ .select_label,
-.select_outline:valid ~ .select_label { 
+.select_outline:valid ~ .select_label {
     color: $primary-color;
     transform: scale(0.75) translate(-5px, -22px);
 }

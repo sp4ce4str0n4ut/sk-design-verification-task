@@ -2,16 +2,16 @@ import React from 'react';
 import Form from '../Form/index';
 import Info from '../Info/Info';
 
-import styles from './App.module.scss';
+import { AppGlob, AppWrap } from './styles';
 
 function App() {
   return (
-    <div className={styles.app}>
-      <div className={styles.app_wrap}>
+    <AppGlob>
+      <AppWrap>
         <Info />
         <Form />
-      </div>
-    </div>
+      </AppWrap>
+    </AppGlob>
   );
 }
 
